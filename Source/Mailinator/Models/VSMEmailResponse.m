@@ -7,7 +7,7 @@
 
 #import "VSMEmailResponse.h"
 
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 static NSString *const kMERApiInboxFetchesLeft = @"apiInboxFetchesLeft";
 static NSString *const kMERApiEmailFetchesLeft = @"apiEmailFetchesLeft";
@@ -58,11 +58,11 @@ static NSString *const kMERForwardsLeft = @"forwardsLeft";
 #pragma mark - VFSerializable
 
 + (instancetype) deserializeFrom:(NSDictionary *)candidate {
-    NSNumber *inboxFetchesLeft = [candidate[kMERApiInboxFetchesLeft] vss_as:[NSNumber class]];
-    NSNumber *emailFetchesLeft = [candidate[kMERApiEmailFetchesLeft] vss_as:[NSNumber class]];
-    NSDictionary *emailCandidate = [candidate[kMERData] vss_as:[NSDictionary class]];
+    NSNumber *inboxFetchesLeft = [candidate[kMERApiInboxFetchesLeft] vsm_as:[NSNumber class]];
+    NSNumber *emailFetchesLeft = [candidate[kMERApiEmailFetchesLeft] vsm_as:[NSNumber class]];
+    NSDictionary *emailCandidate = [candidate[kMERData] vsm_as:[NSDictionary class]];
     VSMEmail *email = [VSMEmail deserializeFrom:emailCandidate];
-    NSNumber *forwardsLeft = [candidate[kMERForwardsLeft] vss_as:[NSNumber class]];
+    NSNumber *forwardsLeft = [candidate[kMERForwardsLeft] vsm_as:[NSNumber class]];
     
     return [[self alloc] initWithInboxFetchesLeft:inboxFetchesLeft emailFetchesLeft:emailFetchesLeft email:email forwardsLeft:forwardsLeft];
 }

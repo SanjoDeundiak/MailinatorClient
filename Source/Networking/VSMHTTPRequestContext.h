@@ -1,5 +1,5 @@
 //
-//  VSSHTTPRequestContext.h
+//  VSMHTTPRequestContext.h
 //  VirgilKeys
 //
 //  Created by Pavel Gorb on 2/10/16.
@@ -13,7 +13,7 @@
  *
  * Actual requests use the context objects to get the service URL and unique identifier, if it is necessary.
  */
-@interface VSSHTTPRequestContext : NSObject
+@interface VSMHTTPRequestContext : NSObject
 
 /**
  * Contains base (service) url which will be used by the request.

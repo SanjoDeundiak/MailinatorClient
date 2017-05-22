@@ -10,10 +10,10 @@
 
 #import "VSMMailinatorInboxRequest.h"
 #import "VSMMailinatorEmailRequest.h"
-#import "VSSHTTPRequest.h"
-#import "VSSHTTPRequest.h"
+#import "VSMHTTPRequest.h"
+#import "VSMHTTPRequest.h"
 
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
 
@@ -55,7 +55,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         return;
     }
     
-    VSSHTTPRequestCompletionHandler handler = ^(VSSHTTPRequest *request) {
+    VSMHTTPRequestCompletionHandler handler = ^(VSMHTTPRequest *request) {
         if (request.error != nil) {
             if (completionHandler != nil) {
                 completionHandler(nil, request.error);
@@ -64,7 +64,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         }
         
         if (completionHandler != nil) {
-            VSMMailinatorInboxRequest *mrequest = [request vss_as:[VSMMailinatorInboxRequest class]];
+            VSMMailinatorInboxRequest *mrequest = [request vsm_as:[VSMMailinatorInboxRequest class]];
             if (mrequest.metadataList == nil) {
                 completionHandler(nil, [NSError errorWithDomain:kMailinatorErrorDomain code:-103 userInfo:@{ NSLocalizedDescriptionKey: @"Error parsing response" }]);
                 return;
@@ -73,7 +73,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         }
     };
     
-    VSSHTTPRequestContext *context = [[VSSHTTPRequestContext alloc] initWithServiceUrl:self.serviceUrl];
+    VSMHTTPRequestContext *context = [[VSMHTTPRequestContext alloc] initWithServiceUrl:self.serviceUrl];
     VSMMailinatorInboxRequest *request = [[VSMMailinatorInboxRequest alloc] initWithContext:context token:self.token to:name];
     request.completionHandler = handler;
     [self send:request];
@@ -89,7 +89,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         return;
     }
     
-    VSSHTTPRequestCompletionHandler handler = ^(VSSHTTPRequest *request) {
+    VSMHTTPRequestCompletionHandler handler = ^(VSMHTTPRequest *request) {
         if (request.error != nil) {
             if (completionHandler != nil) {
                 completionHandler(nil, request.error);
@@ -98,7 +98,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         }
         
         if (completionHandler != nil) {
-            VSMMailinatorEmailRequest *mrequest = [request vss_as:[VSMMailinatorEmailRequest class]];
+            VSMMailinatorEmailRequest *mrequest = [request vsm_as:[VSMMailinatorEmailRequest class]];
             if (mrequest.email == nil) {
                 completionHandler(nil, [NSError errorWithDomain:kMailinatorErrorDomain code:-103 userInfo:@{ NSLocalizedDescriptionKey: @"Error parsing response" }]);
                 return;
@@ -107,31 +107,31 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         }
     };
     
-    VSSHTTPRequestContext *context = [[VSSHTTPRequestContext alloc] initWithServiceUrl:self.serviceUrl];
+    VSMHTTPRequestContext *context = [[VSMHTTPRequestContext alloc] initWithServiceUrl:self.serviceUrl];
     VSMMailinatorEmailRequest *request = [[VSMMailinatorEmailRequest alloc] initWithContext:context token:self.token emailId:emailId];
     request.completionHandler = handler;
     [self send:request];
 }
 
-- (void)send:(VSSHTTPRequest *)request {
+- (void)send:(VSMHTTPRequest *)request {
     if (request == nil) {
         return;
     }
     
 #if USE_SERVICE_REQUEST_DEBUG
     {
-        VSSRDLog(@"%@: request URL: %@", NSStringFromClass(request.class), request.request.URL);
-        VSSRDLog(@"%@: request method: %@", NSStringFromClass(request.class), request.request.HTTPMethod);
+        VSMRDLog(@"%@: request URL: %@", NSStringFromClass(request.class), request.request.URL);
+        VSMRDLog(@"%@: request method: %@", NSStringFromClass(request.class), request.request.HTTPMethod);
         if (request.request.HTTPBody.length) {
             NSString *logStr = [[NSString alloc] initWithData:request.request.HTTPBody encoding:NSUTF8StringEncoding];
-            VSSRDLog(@"%@: request body: %@", NSStringFromClass(request.class), logStr);
+            VSMRDLog(@"%@: request body: %@", NSStringFromClass(request.class), logStr);
         }
-        VSSRDLog(@"%@: request headers: %@", NSStringFromClass(request.class), request.request.allHTTPHeaderFields);
+        VSMRDLog(@"%@: request headers: %@", NSStringFromClass(request.class), request.request.allHTTPHeaderFields);
         
         NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
         NSArray *cookies = [cookieStorage cookiesForURL:request.request.URL];
         for (NSHTTPCookie *cookie in cookies) {
-            VSSRDLog(@"*******COOKIE: %@: %@", [cookie name], [cookie value]);
+            VSMRDLog(@"*******COOKIE: %@: %@", [cookie name], [cookie value]);
         }
     }
 #endif

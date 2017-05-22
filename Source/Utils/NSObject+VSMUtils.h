@@ -11,7 +11,7 @@
 /**
  Helper category for convenient type casting.
  */
-@interface NSObject (VSSUtils)
+@interface NSObject (VSMUtils)
 
 /**
  Returns object casted to required class or nil if source object can not be casted.
@@ -20,6 +20,6 @@
 
  @return Object of required class or nil.
  */
-- (id __nullable)vss_as:(Class __nonnull)expectedClass;
+- (id __nullable)vsm_as:(Class __nonnull)expectedClass;
 
 @end

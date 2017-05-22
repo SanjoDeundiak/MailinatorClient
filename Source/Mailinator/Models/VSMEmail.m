@@ -9,7 +9,7 @@
 #import "VSMEmailMetadata.h"
 #import "VSMPart.h"
 
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 static NSString *const kMEMetadata = @"metadata";
 static NSString *const kMEHeaders = @"headers";
@@ -57,9 +57,9 @@ static NSString *const kMEParts = @"parts";
 
 + (instancetype)deserializeFrom:(NSDictionary *)candidate {
     VSMEmailMetadata *metadata = [VSMEmailMetadata deserializeFrom:candidate];
-    NSDictionary *headers = [candidate[kMEHeaders] vss_as:[NSDictionary class]];
+    NSDictionary *headers = [candidate[kMEHeaders] vsm_as:[NSDictionary class]];
 
-    NSArray *partsCandidates = [candidate[kMEParts] vss_as:[NSArray class]];
+    NSArray *partsCandidates = [candidate[kMEParts] vsm_as:[NSArray class]];
     NSMutableArray *parts = [[NSMutableArray alloc] initWithCapacity:[partsCandidates count]];
     for (NSDictionary *partCandidate in partsCandidates) {
         VSMPart *part = [VSMPart deserializeFrom:partCandidate];

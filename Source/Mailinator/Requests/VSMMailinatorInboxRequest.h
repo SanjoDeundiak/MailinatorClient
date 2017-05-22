@@ -6,15 +6,15 @@
 //
 
 #import "VSMMailinatorRequest.h"
-#import "VSSHTTPRequestContext.h"
+#import "VSMHTTPRequestContext.h"
 #import "VSMEmailMetadata.h"
 
 @interface VSMMailinatorInboxRequest : VSMMailinatorRequest
 
 @property (nonatomic, strong, readonly) NSArray<VSMEmailMetadata *> * __nullable metadataList;
 
-- (instancetype __nonnull)initWithContext:(VSSHTTPRequestContext * __nonnull)context token:(NSString * __nonnull)token to:(NSString * __nonnull)to NS_DESIGNATED_INITIALIZER;
+- (instancetype __nonnull)initWithContext:(VSMHTTPRequestContext * __nonnull)context token:(NSString * __nonnull)token to:(NSString * __nonnull)to NS_DESIGNATED_INITIALIZER;
 
-- (instancetype __nonnull)initWithContext:(VSSHTTPRequestContext * __nonnull)context token:(NSString * __nonnull)token NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithContext:(VSMHTTPRequestContext * __nonnull)context token:(NSString * __nonnull)token NS_UNAVAILABLE;
 
 @end

@@ -6,12 +6,12 @@
 //
 
 #import "VSMMailinatorRequest.h"
-#import "NSObject+VSSUtils.h"
-#import "VSSHTTPRequestContext.h"
+#import "NSObject+VSMUtils.h"
+#import "VSMHTTPRequestContext.h"
 
 @implementation VSMMailinatorRequest
 
-- (instancetype)initWithContext:(VSSHTTPRequestContext *)context token:(NSString *)token {
+- (instancetype)initWithContext:(VSMHTTPRequestContext *)context token:(NSString *)token {
     self = [super initWithContext:context];
     if (self == nil) {
         return nil;

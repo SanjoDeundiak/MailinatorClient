@@ -6,7 +6,7 @@
 //
 
 #import "VSMPart.h"
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 static NSString *const kMPHeaders = @"headers";
 static NSString *const kMPBody = @"body";
@@ -49,8 +49,8 @@ static NSString *const kMPBody = @"body";
 #pragma mark - VFSerializable
 
 + (instancetype)deserializeFrom:(NSDictionary *)candidate {
-    NSDictionary *headers = [candidate[kMPHeaders] vss_as:[NSDictionary class]];
-    NSString *body = [candidate[kMPBody] vss_as:[NSString class]];
+    NSDictionary *headers = [candidate[kMPHeaders] vsm_as:[NSDictionary class]];
+    NSString *body = [candidate[kMPBody] vsm_as:[NSString class]];
     
     return [[self alloc] initWithHeaders:headers body:body];
 }

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
-@implementation NSObject (VSSUtils)
+@implementation NSObject (VSMUtils)
 
-- (id)vss_as:(Class)expectedClass {
+- (id)vsm_as:(Class)expectedClass {
     if ([self isKindOfClass:expectedClass]) {
         return self;
     }

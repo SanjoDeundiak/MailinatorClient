@@ -6,7 +6,7 @@
 //
 
 #import "VSMEmailMetadata.h"
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 static NSString *const kMSecondsAgo = @"seconds_ago";
 static NSString *const kMId = @"id";
@@ -77,15 +77,15 @@ static NSString *const kMIp = @"ip";
 #pragma mark - VFSerializable
 
 + (instancetype)deserializeFrom:(NSDictionary *)candidate {
-    NSNumber *seconds_ago = [candidate[kMSecondsAgo] vss_as:[NSNumber class]];
-    NSString *mid = [candidate[kMId] vss_as:[NSString class]];
-    NSString *to = [candidate[kMTo] vss_as:[NSString class]];
-    NSNumber *time = [candidate[kMTime] vss_as:[NSNumber class]];
-    NSString *subject = [candidate[kMSubject] vss_as:[NSString class]];
-    NSString *fromfull = [candidate[kMFromFull] vss_as:[NSString class]];
-    NSNumber *been_read = [candidate[kMBeenRead] vss_as:[NSNumber class]];
-    NSString *from = [candidate[kMFrom] vss_as:[NSString class]];
-    NSString *ip = [candidate[kMIp] vss_as:[NSString class]];
+    NSNumber *seconds_ago = [candidate[kMSecondsAgo] vsm_as:[NSNumber class]];
+    NSString *mid = [candidate[kMId] vsm_as:[NSString class]];
+    NSString *to = [candidate[kMTo] vsm_as:[NSString class]];
+    NSNumber *time = [candidate[kMTime] vsm_as:[NSNumber class]];
+    NSString *subject = [candidate[kMSubject] vsm_as:[NSString class]];
+    NSString *fromfull = [candidate[kMFromFull] vsm_as:[NSString class]];
+    NSNumber *been_read = [candidate[kMBeenRead] vsm_as:[NSNumber class]];
+    NSString *from = [candidate[kMFrom] vsm_as:[NSString class]];
+    NSString *ip = [candidate[kMIp] vsm_as:[NSString class]];
     
     return [[self alloc] initWithMid:mid subject:subject from:from to:to time:time beenRead:been_read fromfull:fromfull secondsAgo:seconds_ago ip:ip];
 }

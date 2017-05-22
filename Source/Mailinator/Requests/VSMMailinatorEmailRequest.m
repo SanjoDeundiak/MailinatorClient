@@ -8,7 +8,7 @@
 #import "VSMMailinatorEmailRequest.h"
 #import "VSMEmail.h"
 #import "VSMEmailResponse.h"
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 @interface VSMMailinatorEmailRequest ()
 
@@ -21,7 +21,7 @@
 
 #pragma mark - Lifecycle
 
-- (instancetype)initWithContext:(VSSHTTPRequestContext *)context token:(NSString *)token emailId:(NSString *)emailId {
+- (instancetype)initWithContext:(VSMHTTPRequestContext *)context token:(NSString *)token emailId:(NSString *)emailId {
     self = [super initWithContext:context token:token];
     if (self == nil) {
         return nil;
@@ -48,7 +48,7 @@
         return error;
     }
     
-    NSDictionary *emailCandidate = [candidate vss_as:[NSDictionary class]];
+    NSDictionary *emailCandidate = [candidate vsm_as:[NSDictionary class]];
     VSMEmailResponse *response = [VSMEmailResponse deserializeFrom:emailCandidate];
     self.email = response.email;
     

@@ -1,28 +1,28 @@
 //
-//  VSSHTTPJSONRequest.m
+//  VSMHTTPJSONRequest.m
 //  VirgilSDK
 //
 //  Created by Pavel Gorb on 9/11/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "VSSHTTPJSONRequest.h"
-#import "NSObject+VSSUtils.h"
+#import "VSMHTTPJSONRequest.h"
+#import "NSObject+VSMUtils.h"
 
-@implementation VSSHTTPJSONRequest
+@implementation VSMHTTPJSONRequest
 
 #pragma mark - Class logic
 
 - (void)setRequestBodyWithObject:(NSObject *)dto {
     if (![NSJSONSerialization isValidJSONObject:dto]) {
-        VSSRDLog(@"Invalid object for JSON serialization of the request body: '%@'", [dto description]);
+        VSMRDLog(@"Invalid object for JSON serialization of the request body: '%@'", [dto description]);
         return;
     }
     
     NSError *serializationError = nil;
     NSData *body = [NSJSONSerialization dataWithJSONObject:dto options:0 error:&serializationError];
     if (serializationError != nil) {
-        VSSRDLog(@"Unable to serialize request body: '%@'", [serializationError localizedDescription]);
+        VSMRDLog(@"Unable to serialize request body: '%@'", [serializationError localizedDescription]);
         return;
     }
     

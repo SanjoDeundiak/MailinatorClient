@@ -1,5 +1,5 @@
 //
-//  VSSHTTPRequest.h
+//  VSMHTTPRequest.h
 //  VirgilSDK
 //
 //  Created by Pavel Gorb on 9/7/15.
@@ -14,12 +14,12 @@
 
 /// Debugging macro
 #if USE_SERVICE_REQUEST_DEBUG
-#  define VSSRDLog(...) NSLog(__VA_ARGS__)
+#  define VSMRDLog(...) NSLog(__VA_ARGS__)
 # else
-#  define VSSRDLog(...) /* nothing to log */
+#  define VSMRDLog(...) /* nothing to log */
 #endif
 
-#import "VSSHTTPRequestContext.h"
+#import "VSMHTTPRequestContext.h"
 
 /**
  * Enum for HTTP Request methods.
@@ -35,41 +35,41 @@ typedef NS_ENUM(NSUInteger, HTTPRequestMethod) {
     DELETE
 };
 
-@class VSSHTTPRequest;
+@class VSMHTTPRequest;
 /**
  * Callback for operation completion.
  */
-typedef void (^VSSHTTPRequestCompletionHandler)(VSSHTTPRequest * __nonnull request);
+typedef void (^VSMHTTPRequestCompletionHandler)(VSMHTTPRequest * __nonnull request);
 
 /**
  * Default timeout value for the HTTP operations.
  */
-extern const NSTimeInterval kVSSHTTPRequestDefaultTimeout;
+extern const NSTimeInterval kVSMHTTPRequestDefaultTimeout;
 
 /**
  * Default HTTP method for HTTP operations.
  */
-extern NSString * __nonnull const kVSSHTTPRequestDefaultMethod;
+extern NSString * __nonnull const kVSMHTTPRequestDefaultMethod;
 
 /**
  * Error domain for the request errors.
  */
-extern NSString * __nonnull const kVSSHTTPRequestErrorDomain;
+extern NSString * __nonnull const kVSMHTTPRequestErrorDomain;
 
 /**
  * Header name for the Access token.
  */
-extern NSString * __nonnull const kVSSAccessTokenHeader;
+extern NSString * __nonnull const kVSMAccessTokenHeader;
 
 /**
  * Base wrapper class for HTTP requests.
  */
-@interface VSSHTTPRequest : NSObject
+@interface VSMHTTPRequest : NSObject
 
 /**
  * Context for the request.
  */
-@property (nonatomic, strong, readonly) VSSHTTPRequestContext * __nonnull context;
+@property (nonatomic, strong, readonly) VSMHTTPRequestContext * __nonnull context;
 
 /**
  * Underlying HTTP request.
@@ -94,7 +94,7 @@ extern NSString * __nonnull const kVSSAccessTokenHeader;
 /** 
  * Callback for request completion. Also called in case of error.
  */
-@property (nonatomic, copy) VSSHTTPRequestCompletionHandler __nullable completionHandler;
+@property (nonatomic, copy) VSMHTTPRequestCompletionHandler __nullable completionHandler;
 
 ///------------------------------------------
 /// @name Lifecycle
@@ -108,7 +108,7 @@ extern NSString * __nonnull const kVSSAccessTokenHeader;
  *
  * @return Instance of particular network operation.
  */
-- (instancetype __nonnull)initWithContext:(VSSHTTPRequestContext * __nonnull)context NS_DESIGNATED_INITIALIZER;
+- (instancetype __nonnull)initWithContext:(VSMHTTPRequestContext * __nonnull)context NS_DESIGNATED_INITIALIZER;
 
 - (instancetype __nonnull)init NS_UNAVAILABLE;
 

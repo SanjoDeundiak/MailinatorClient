@@ -7,7 +7,7 @@
 
 #import "VSMMailinatorInboxRequest.h"
 #import "VSMEmailMetadata.h"
-#import "NSObject+VSSUtils.h"
+#import "NSObject+VSMUtils.h"
 
 static NSString *const kMRMessages = @"messages";
 
@@ -22,7 +22,7 @@ static NSString *const kMRMessages = @"messages";
 
 #pragma mark - Lifecycle
 
-- (instancetype)initWithContext:(VSSHTTPRequestContext *)context token:(NSString * __nonnull)token to:(NSString *)to {
+- (instancetype)initWithContext:(VSMHTTPRequestContext *)context token:(NSString * __nonnull)token to:(NSString *)to {
     self = [super initWithContext:context token:token];
     if (self == nil) {
         return nil;
@@ -51,8 +51,8 @@ static NSString *const kMRMessages = @"messages";
         return error;
     }
     
-    NSDictionary *messages = [candidate vss_as:[NSDictionary class]];
-    NSArray *messagesList = [messages[kMRMessages] vss_as:[NSArray class]];
+    NSDictionary *messages = [candidate vsm_as:[NSDictionary class]];
+    NSArray *messagesList = [messages[kMRMessages] vsm_as:[NSArray class]];
     
     NSMutableArray<VSMEmailMetadata *> *metadataList = [[NSMutableArray alloc] initWithCapacity:[messagesList count]];
     for (NSDictionary *message in messagesList) {
