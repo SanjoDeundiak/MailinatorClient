@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char MailinatorVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Mailinator/PublicHeader.h>
 
-#import "Mailiantor.h"
-#import "MModelsPublic.h"
+#import "VSMMailiantor.h"
+#import "VSMModelsPublic.h"

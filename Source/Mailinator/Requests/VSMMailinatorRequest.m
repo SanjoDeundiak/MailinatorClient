@@ -1,17 +1,16 @@
 //
-//  MailinatorRequest.m
-//  VirgilKeys
+//  VSMMailinatorRequest.m
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "MailinatorRequest.h"
-#import "MailinatorRequestSettingsProvider.h"
+#import "VSMMailinatorRequest.h"
+#import "VSMMailinatorRequestSettingsProvider.h"
 #import "NSObject+VSSUtils.h"
 #import "VSSHTTPRequestContext.h"
 
-@implementation MailinatorRequest
+@implementation VSMMailinatorRequest
 
 - (instancetype)initWithContext:(VSSHTTPRequestContext *)context token:(NSString *)token {
     self = [super initWithContext:context];

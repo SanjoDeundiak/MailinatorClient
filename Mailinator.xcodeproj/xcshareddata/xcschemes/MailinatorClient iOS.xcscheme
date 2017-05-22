@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "42B341C91ED2E84A00F944FC"
-               BuildableName = "MailinatorClient iOS.framework"
+               BuildableName = "MailinatorClient.framework"
                BlueprintName = "MailinatorClient iOS"
                ReferencedContainer = "container:Mailinator.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42B341C91ED2E84A00F944FC"
-            BuildableName = "MailinatorClient iOS.framework"
+            BuildableName = "MailinatorClient.framework"
             BlueprintName = "MailinatorClient iOS"
             ReferencedContainer = "container:Mailinator.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42B341C91ED2E84A00F944FC"
-            BuildableName = "MailinatorClient iOS.framework"
+            BuildableName = "MailinatorClient.framework"
             BlueprintName = "MailinatorClient iOS"
             ReferencedContainer = "container:Mailinator.xcodeproj">
          </BuildableReference>

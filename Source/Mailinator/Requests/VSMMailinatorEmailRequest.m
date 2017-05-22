@@ -1,27 +1,26 @@
 //
-//  MailinatorEmailRequest.m
-//  VirgilKeys
+//  VSMMailinatorEmailRequest.m
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "MailinatorEmailRequest.h"
+#import "VSMMailinatorEmailRequest.h"
 
-#import "MEmail.h"
-#import "MEmailResponse.h"
-#import "MailinatorRequestSettingsProvider.h"
+#import "VSMEmail.h"
+#import "VSMEmailResponse.h"
+#import "VSMMailinatorRequestSettingsProvider.h"
 
 #import "NSObject+VSSUtils.h"
 
-@interface MailinatorEmailRequest ()
+@interface VSMMailinatorEmailRequest ()
 
-@property (nonatomic, strong, readwrite) MEmail * __nullable email;
+@property (nonatomic, strong, readwrite) VSMEmail * __nullable email;
 @property (nonatomic, strong) NSString * __nonnull emailId;
 
 @end
 
-@implementation MailinatorEmailRequest
+@implementation VSMMailinatorEmailRequest
 
 #pragma mark - Lifecycle
 
@@ -53,7 +52,7 @@
     }
     
     NSDictionary *emailCandidate = [candidate vss_as:[NSDictionary class]];
-    MEmailResponse *response = [MEmailResponse deserializeFrom:emailCandidate];
+    VSMEmailResponse *response = [VSMEmailResponse deserializeFrom:emailCandidate];
     self.email = response.email;
     
     return nil;

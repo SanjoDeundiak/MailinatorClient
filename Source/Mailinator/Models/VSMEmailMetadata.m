@@ -1,12 +1,11 @@
 //
-//  MMessage.m
-//  VirgilKeys
+//  VSMMessage.m
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "MEmailMetadata.h"
+#import "VSMEmailMetadata.h"
 #import "NSObject+VSSUtils.h"
 
 static NSString *const kMSecondsAgo = @"seconds_ago";
@@ -19,7 +18,7 @@ static NSString *const kMBeenRead = @"been_read";
 static NSString *const kMFrom = @"from";
 static NSString *const kMIp = @"ip";
 
-@interface MEmailMetadata()
+@interface VSMEmailMetadata()
 
 @property (nonatomic, strong, readwrite) NSNumber * __nonnull seconds_ago;
 @property (nonatomic, strong, readwrite) NSString * __nonnull mid;
@@ -33,7 +32,7 @@ static NSString *const kMIp = @"ip";
 
 @end
 
-@implementation MEmailMetadata
+@implementation VSMEmailMetadata
 
 @synthesize seconds_ago = _seconds_ago;
 @synthesize mid = _mid;

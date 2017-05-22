@@ -1,16 +1,15 @@
 //
-//  Mailinator.m
-//  VirgilKeys
+//  VSMMailinator.m
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "Mailinator.h"
-#import "MEmail.h"
+#import "VSMMailinator.h"
+#import "VSMEmail.h"
 
-#import "MailinatorInboxRequest.h"
-#import "MailinatorEmailRequest.h"
+#import "VSMMailinatorInboxRequest.h"
+#import "VSMMailinatorEmailRequest.h"
 #import "VSSHTTPRequest.h"
 #import "VSSHTTPRequest.h"
 
@@ -18,14 +17,14 @@
 
 static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
 
-@interface Mailinator ()
+@interface VSMMailinator ()
 
 @property (nonatomic) NSOperationQueue * __nonnull queue;
 @property (nonatomic) NSURLSession * __nonnull urlSession;
 
 @end
 
-@implementation Mailinator
+@implementation VSMMailinator
 
 - (instancetype)initWithApplicationToken:(NSString *)token serviceUrl:(NSURL *)serviceUrl {
     self = [super init];
@@ -46,7 +45,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
 
 #pragma mark - Overrides
 
-- (void)getInbox:(NSString *)name completionHandler:(void(^)(NSArray<MEmailMetadata *> *metadataList, NSError *error))completionHandler {
+- (void)getInbox:(NSString *)name completionHandler:(void(^)(NSArray<VSMEmailMetadata *> *metadataList, NSError *error))completionHandler {
     if (name == nil) {
         if (completionHandler != nil) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -65,7 +64,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         }
         
         if (completionHandler != nil) {
-            MailinatorInboxRequest *mrequest = [request vss_as:[MailinatorInboxRequest class]];
+            VSMMailinatorInboxRequest *mrequest = [request vss_as:[VSMMailinatorInboxRequest class]];
             if (mrequest.metadataList == nil) {
                 completionHandler(nil, [NSError errorWithDomain:kMailinatorErrorDomain code:-103 userInfo:@{ NSLocalizedDescriptionKey: @"Error parsing response" }]);
                 return;
@@ -75,12 +74,12 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
     };
     
     VSSHTTPRequestContext *context = [[VSSHTTPRequestContext alloc] initWithServiceUrl:self.serviceUrl];
-    MailinatorInboxRequest *request = [[MailinatorInboxRequest alloc] initWithContext:context token:self.token to:name];
+    VSMMailinatorInboxRequest *request = [[VSMMailinatorInboxRequest alloc] initWithContext:context token:self.token to:name];
     request.completionHandler = handler;
     [self send:request];
 }
 
-- (void)getEmail:(NSString *)emailId completionHandler:(void(^)(MEmail *email, NSError *error))completionHandler {
+- (void)getEmail:(NSString *)emailId completionHandler:(void(^)(VSMEmail *email, NSError *error))completionHandler {
     if (emailId == nil) {
         if (completionHandler != nil) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -99,7 +98,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
         }
         
         if (completionHandler != nil) {
-            MailinatorEmailRequest *mrequest = [request vss_as:[MailinatorEmailRequest class]];
+            VSMMailinatorEmailRequest *mrequest = [request vss_as:[VSMMailinatorEmailRequest class]];
             if (mrequest.email == nil) {
                 completionHandler(nil, [NSError errorWithDomain:kMailinatorErrorDomain code:-103 userInfo:@{ NSLocalizedDescriptionKey: @"Error parsing response" }]);
                 return;
@@ -109,7 +108,7 @@ static NSString *const kMailinatorErrorDomain = @"MailinatorErrorDomain";
     };
     
     VSSHTTPRequestContext *context = [[VSSHTTPRequestContext alloc] initWithServiceUrl:self.serviceUrl];
-    MailinatorEmailRequest *request = [[MailinatorEmailRequest alloc] initWithContext:context token:self.token emailId:emailId];
+    VSMMailinatorEmailRequest *request = [[VSMMailinatorEmailRequest alloc] initWithContext:context token:self.token emailId:emailId];
     request.completionHandler = handler;
     [self send:request];
 }

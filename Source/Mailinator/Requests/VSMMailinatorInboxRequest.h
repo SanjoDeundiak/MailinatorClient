@@ -1,18 +1,17 @@
 //
-//  MailinatorInboxRequest.h
-//  VirgilKeys
+//  VSMMailinatorInboxRequest.h
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "MailinatorRequest.h"
+#import "VSMMailinatorRequest.h"
 #import "VSSHTTPRequestContext.h"
-#import "MEmailMetadata.h"
+#import "VSMEmailMetadata.h"
 
-@interface MailinatorInboxRequest : MailinatorRequest
+@interface VSMMailinatorInboxRequest : VSMMailinatorRequest
 
-@property (nonatomic, strong, readonly) NSArray<MEmailMetadata *> * __nullable metadataList;
+@property (nonatomic, strong, readonly) NSArray<VSMEmailMetadata *> * __nullable metadataList;
 
 - (instancetype __nonnull)initWithContext:(VSSHTTPRequestContext * __nonnull)context token:(NSString * __nonnull)token to:(NSString * __nonnull)to NS_DESIGNATED_INITIALIZER;
 

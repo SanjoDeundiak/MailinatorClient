@@ -1,6 +1,5 @@
 //
-//  MPart.h
-//  VirgilKeys
+//  VSMPart.h
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
@@ -8,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MPart : NSObject
+@interface VSMPart : NSObject
 
 @property (nonatomic, strong, readonly) NSDictionary * __nonnull headers;
 @property (nonatomic, strong, readonly) NSString * __nonnull body;

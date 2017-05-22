@@ -1,6 +1,5 @@
 //
-//  MEmailMetadata.h
-//  VirgilKeys
+//  VSMEmailMetadata.h
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
@@ -8,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MEmailMetadata : NSObject
+@interface VSMEmailMetadata : NSObject
 
 @property (nonatomic, strong, readonly) NSNumber * __nonnull seconds_ago;
 @property (nonatomic, strong, readonly) NSString * __nonnull mid;

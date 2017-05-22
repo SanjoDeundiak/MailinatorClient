@@ -1,6 +1,5 @@
 //
-//  MailinatorRequest.h
-//  VirgilKeys
+//  VSMMailinatorRequest.h
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
@@ -9,9 +8,9 @@
 #import "VSSHTTPJSONRequest.h"
 #import "VSSHTTPRequestContext.h"
 
-@protocol MailinatorRequestSettingsProvider;
+@protocol VSMMailinatorRequestSettingsProvider;
 
-@interface MailinatorRequest : VSSHTTPJSONRequest
+@interface VSMMailinatorRequest : VSSHTTPJSONRequest
 
 @property (nonatomic, strong, readonly) NSString * __nullable token;
 

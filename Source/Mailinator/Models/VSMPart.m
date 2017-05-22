@@ -1,25 +1,24 @@
 //
-//  MPart.m
-//  VirgilKeys
+//  VSMPart.m
 //
 //  Created by Pavel Gorb on 9/23/15.
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "MPart.h"
+#import "VSMPart.h"
 #import "NSObject+VSSUtils.h"
 
 static NSString *const kMPHeaders = @"headers";
 static NSString *const kMPBody = @"body";
 
-@interface MPart ()
+@interface VSMPart ()
 
 @property (nonatomic, strong, readwrite) NSDictionary * __nonnull headers;
 @property (nonatomic, strong, readwrite) NSString * __nonnull body;
 
 @end
 
-@implementation MPart
+@implementation VSMPart
 
 @synthesize headers = _headers;
 @synthesize body = _body;
