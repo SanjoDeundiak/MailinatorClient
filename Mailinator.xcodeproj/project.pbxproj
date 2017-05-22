@@ -61,8 +61,8 @@
 		42B342BD1ED2EC2A00F944FC /* VSMMailinatorInboxRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421C1ED2E8F400F944FC /* VSMMailinatorInboxRequest.h */; };
 		42B342BE1ED2EC2A00F944FC /* VSMMailinatorRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */; };
 		42B342BF1ED2EC2A00F944FC /* VSMMailinatorRequestSettingsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342201ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h */; };
-		42B342C51ED2EDA600F944FC /* MailinatorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* MailinatorClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42B342C61ED2EDD500F944FC /* MailinatorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* MailinatorClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42B342C51ED2EDA600F944FC /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42B342C61ED2EDD500F944FC /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,7 +96,7 @@
 		42B342921ED2E98500F944FC /* NSObject+VSSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VSSUtils.m"; sourceTree = "<group>"; };
 		42B342951ED2EA4800F944FC /* VSMModelsPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMModelsPublic.h; sourceTree = "<group>"; };
 		42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MailinatorClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42B342C41ED2EDA600F944FC /* MailinatorClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailinatorClient.h; sourceTree = "<group>"; };
+		42B342C41ED2EDA600F944FC /* Mailinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mailinator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 		42B341D51ED2E8B700F944FC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				42B342C41ED2EDA600F944FC /* MailinatorClient.h */,
+				42B342C41ED2EDA600F944FC /* Mailinator.h */,
 				42B3420A1ED2E8F400F944FC /* Mailinator */,
 				42B342341ED2E8FE00F944FC /* Networking */,
 				42B342901ED2E98500F944FC /* Utils */,
@@ -248,7 +248,7 @@
 				42B342961ED2EA6600F944FC /* VSMModelsPublic.h in Headers */,
 				42B342211ED2E8F400F944FC /* VSMMailinator.h in Headers */,
 				42B3428D1ED2E8FE00F944FC /* VSSHTTPRequestPrivate.h in Headers */,
-				42B342C51ED2EDA600F944FC /* MailinatorClient.h in Headers */,
+				42B342C51ED2EDA600F944FC /* Mailinator.h in Headers */,
 				42B3428B1ED2E8FE00F944FC /* VSSHTTPRequest.h in Headers */,
 				42B342311ED2E8F400F944FC /* VSMMailinatorRequest.h in Headers */,
 				42B342331ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h in Headers */,
@@ -271,7 +271,7 @@
 				42B342B41ED2EC1B00F944FC /* VSMEmailResponse.h in Headers */,
 				42B342B51ED2EC1B00F944FC /* VSMPart.h in Headers */,
 				42B342B71ED2EC2A00F944FC /* NSObject+VSSUtils.h in Headers */,
-				42B342C61ED2EDD500F944FC /* MailinatorClient.h in Headers */,
+				42B342C61ED2EDD500F944FC /* Mailinator.h in Headers */,
 				42B342B81ED2EC2A00F944FC /* VSSHTTPJSONRequest.h in Headers */,
 				42B342B91ED2EC2A00F944FC /* VSSHTTPRequest.h in Headers */,
 				42B342BA1ED2EC2A00F944FC /* VSSHTTPRequestPrivate.h in Headers */,
@@ -463,7 +463,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = MailinatorClient;
+				PRODUCT_NAME = Mailinator;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -509,7 +509,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MailinatorClient;
+				PRODUCT_NAME = Mailinator;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
