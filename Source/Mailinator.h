@@ -6,5 +6,5 @@
 //  Copyright © 2017 Virgil Security. All rights reserved.
 //
 
-#import "VSMMailiantor.h"
+#import "VSMMailinator.h"
 #import "VSMModelsPublic.h"
