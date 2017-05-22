@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42B341C91ED2E84A00F944FC"
-               BuildableName = "MailinatorClient.framework"
-               BlueprintName = "MailinatorClient"
+               BlueprintIdentifier = "42B3429B1ED2EBE300F944FC"
+               BuildableName = "MailinatorClient macOS.framework"
+               BlueprintName = "MailinatorClient macOS"
                ReferencedContainer = "container:Mailinator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42B341C91ED2E84A00F944FC"
-            BuildableName = "MailinatorClient.framework"
-            BlueprintName = "MailinatorClient"
+            BlueprintIdentifier = "42B3429B1ED2EBE300F944FC"
+            BuildableName = "MailinatorClient macOS.framework"
+            BlueprintName = "MailinatorClient macOS"
             ReferencedContainer = "container:Mailinator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42B341C91ED2E84A00F944FC"
-            BuildableName = "MailinatorClient.framework"
-            BlueprintName = "MailinatorClient"
+            BlueprintIdentifier = "42B3429B1ED2EBE300F944FC"
+            BuildableName = "MailinatorClient macOS.framework"
+            BlueprintName = "MailinatorClient macOS"
             ReferencedContainer = "container:Mailinator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
