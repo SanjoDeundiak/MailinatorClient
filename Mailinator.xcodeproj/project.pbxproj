@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		42B342211ED2E8F400F944FC /* VSMMailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3420C1ED2E8F400F944FC /* VSMMailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B342221ED2E8F400F944FC /* VSMMailinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3420D1ED2E8F400F944FC /* VSMMailinator.m */; };
-		42B342251ED2E8F400F944FC /* VSMEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342111ED2E8F400F944FC /* VSMEmail.h */; };
+		42B342251ED2E8F400F944FC /* VSMEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342111ED2E8F400F944FC /* VSMEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B342261ED2E8F400F944FC /* VSMEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342121ED2E8F400F944FC /* VSMEmail.m */; };
-		42B342271ED2E8F400F944FC /* VSMEmailMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342131ED2E8F400F944FC /* VSMEmailMetadata.h */; };
+		42B342271ED2E8F400F944FC /* VSMEmailMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342131ED2E8F400F944FC /* VSMEmailMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B342281ED2E8F400F944FC /* VSMEmailMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342141ED2E8F400F944FC /* VSMEmailMetadata.m */; };
-		42B342291ED2E8F400F944FC /* VSMEmailResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342151ED2E8F400F944FC /* VSMEmailResponse.h */; };
+		42B342291ED2E8F400F944FC /* VSMEmailResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342151ED2E8F400F944FC /* VSMEmailResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B3422A1ED2E8F400F944FC /* VSMEmailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342161ED2E8F400F944FC /* VSMEmailResponse.m */; };
-		42B3422B1ED2E8F400F944FC /* VSMPart.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342171ED2E8F400F944FC /* VSMPart.h */; };
+		42B3422B1ED2E8F400F944FC /* VSMPart.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342171ED2E8F400F944FC /* VSMPart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B3422C1ED2E8F400F944FC /* VSMPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342181ED2E8F400F944FC /* VSMPart.m */; };
 		42B3422D1ED2E8F400F944FC /* VSMMailinatorEmailRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421A1ED2E8F400F944FC /* VSMMailinatorEmailRequest.h */; };
 		42B3422E1ED2E8F400F944FC /* VSMMailinatorEmailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3421B1ED2E8F400F944FC /* VSMMailinatorEmailRequest.m */; };
@@ -66,7 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42B341CA1ED2E84A00F944FC /* MailinatorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MailinatorClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B341CA1ED2E84A00F944FC /* Mailinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B341CE1ED2E84A00F944FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B3420C1ED2E8F400F944FC /* VSMMailinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMMailinator.h; sourceTree = "<group>"; };
 		42B3420D1ED2E8F400F944FC /* VSMMailinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMMailinator.m; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		42B341CB1ED2E84A00F944FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42B341CA1ED2E84A00F944FC /* MailinatorClient.framework */,
+				42B341CA1ED2E84A00F944FC /* Mailinator.framework */,
 				42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */,
 			);
 			name = Products;
@@ -301,7 +301,7 @@
 			);
 			name = "MailinatorClient iOS";
 			productName = Mailinator;
-			productReference = 42B341CA1ED2E84A00F944FC /* MailinatorClient.framework */;
+			productReference = 42B341CA1ED2E84A00F944FC /* Mailinator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		42B3429B1ED2EBE300F944FC /* MailinatorClient macOS */ = {
