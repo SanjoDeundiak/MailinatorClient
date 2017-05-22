@@ -6,10 +6,7 @@
 //
 
 #import "VSMMailinatorInboxRequest.h"
-#import "VSMMailinatorRequestSettingsProvider.h"
-
 #import "VSMEmailMetadata.h"
-
 #import "NSObject+VSSUtils.h"
 
 static NSString *const kMRMessages = @"messages";

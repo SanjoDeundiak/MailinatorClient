@@ -23,7 +23,6 @@
 		42B342301ED2E8F400F944FC /* VSMMailinatorInboxRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3421D1ED2E8F400F944FC /* VSMMailinatorInboxRequest.m */; };
 		42B342311ED2E8F400F944FC /* VSMMailinatorRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */; };
 		42B342321ED2E8F400F944FC /* VSMMailinatorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3421F1ED2E8F400F944FC /* VSMMailinatorRequest.m */; };
-		42B342331ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342201ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h */; };
 		42B342891ED2E8FE00F944FC /* VSSHTTPJSONRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3425E1ED2E8FE00F944FC /* VSSHTTPJSONRequest.h */; };
 		42B3428A1ED2E8FE00F944FC /* VSSHTTPJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3425F1ED2E8FE00F944FC /* VSSHTTPJSONRequest.m */; };
 		42B3428B1ED2E8FE00F944FC /* VSSHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342601ED2E8FE00F944FC /* VSSHTTPRequest.h */; };
@@ -60,7 +59,6 @@
 		42B342BC1ED2EC2A00F944FC /* VSMMailinatorEmailRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421A1ED2E8F400F944FC /* VSMMailinatorEmailRequest.h */; };
 		42B342BD1ED2EC2A00F944FC /* VSMMailinatorInboxRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421C1ED2E8F400F944FC /* VSMMailinatorInboxRequest.h */; };
 		42B342BE1ED2EC2A00F944FC /* VSMMailinatorRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */; };
-		42B342BF1ED2EC2A00F944FC /* VSMMailinatorRequestSettingsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342201ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h */; };
 		42B342C51ED2EDA600F944FC /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B342C61ED2EDD500F944FC /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -84,7 +82,6 @@
 		42B3421D1ED2E8F400F944FC /* VSMMailinatorInboxRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMMailinatorInboxRequest.m; sourceTree = "<group>"; };
 		42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMMailinatorRequest.h; sourceTree = "<group>"; };
 		42B3421F1ED2E8F400F944FC /* VSMMailinatorRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMMailinatorRequest.m; sourceTree = "<group>"; };
-		42B342201ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMMailinatorRequestSettingsProvider.h; sourceTree = "<group>"; };
 		42B3425E1ED2E8FE00F944FC /* VSSHTTPJSONRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSHTTPJSONRequest.h; sourceTree = "<group>"; };
 		42B3425F1ED2E8FE00F944FC /* VSSHTTPJSONRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSHTTPJSONRequest.m; sourceTree = "<group>"; };
 		42B342601ED2E8FE00F944FC /* VSSHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSHTTPRequest.h; sourceTree = "<group>"; };
@@ -95,7 +92,7 @@
 		42B342911ED2E98500F944FC /* NSObject+VSSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VSSUtils.h"; sourceTree = "<group>"; };
 		42B342921ED2E98500F944FC /* NSObject+VSSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VSSUtils.m"; sourceTree = "<group>"; };
 		42B342951ED2EA4800F944FC /* VSMModelsPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMModelsPublic.h; sourceTree = "<group>"; };
-		42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MailinatorClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MailinatorClient.framework; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B342C41ED2EDA600F944FC /* Mailinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mailinator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,7 +195,6 @@
 				42B3421D1ED2E8F400F944FC /* VSMMailinatorInboxRequest.m */,
 				42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */,
 				42B3421F1ED2E8F400F944FC /* VSMMailinatorRequest.m */,
-				42B342201ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -251,7 +247,6 @@
 				42B342C51ED2EDA600F944FC /* Mailinator.h in Headers */,
 				42B3428B1ED2E8FE00F944FC /* VSSHTTPRequest.h in Headers */,
 				42B342311ED2E8F400F944FC /* VSMMailinatorRequest.h in Headers */,
-				42B342331ED2E8F400F944FC /* VSMMailinatorRequestSettingsProvider.h in Headers */,
 				42B342931ED2E98500F944FC /* NSObject+VSSUtils.h in Headers */,
 				42B342291ED2E8F400F944FC /* VSMEmailResponse.h in Headers */,
 				42B342251ED2E8F400F944FC /* VSMEmail.h in Headers */,
@@ -279,7 +274,6 @@
 				42B342BC1ED2EC2A00F944FC /* VSMMailinatorEmailRequest.h in Headers */,
 				42B342BD1ED2EC2A00F944FC /* VSMMailinatorInboxRequest.h in Headers */,
 				42B342BE1ED2EC2A00F944FC /* VSMMailinatorRequest.h in Headers */,
-				42B342BF1ED2EC2A00F944FC /* VSMMailinatorRequestSettingsProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

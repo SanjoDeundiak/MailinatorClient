@@ -6,11 +6,8 @@
 //
 
 #import "VSMMailinatorEmailRequest.h"
-
 #import "VSMEmail.h"
 #import "VSMEmailResponse.h"
-#import "VSMMailinatorRequestSettingsProvider.h"
-
 #import "NSObject+VSSUtils.h"
 
 @interface VSMMailinatorEmailRequest ()

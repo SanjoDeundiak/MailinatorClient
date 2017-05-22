@@ -6,7 +6,6 @@
 //
 
 #import "VSMMailinatorRequest.h"
-#import "VSMMailinatorRequestSettingsProvider.h"
 #import "NSObject+VSSUtils.h"
 #import "VSSHTTPRequestContext.h"
 

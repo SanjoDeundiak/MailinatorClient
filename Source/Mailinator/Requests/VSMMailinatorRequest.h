@@ -8,8 +8,6 @@
 #import "VSSHTTPJSONRequest.h"
 #import "VSSHTTPRequestContext.h"
 
-@protocol VSMMailinatorRequestSettingsProvider;
-
 @interface VSMMailinatorRequest : VSSHTTPJSONRequest
 
 @property (nonatomic, strong, readonly) NSString * __nullable token;

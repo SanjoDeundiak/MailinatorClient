@@ -5,7 +5,6 @@
 //  Copyright (c) 2015 VirgilSecurity. All rights reserved.
 //
 
-#import "VSMMailinatorRequestSettingsProvider.h"
 #import "VSMEmail.h"
 #import "VSMEmailMetadata.h"
 
