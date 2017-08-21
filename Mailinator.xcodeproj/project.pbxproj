@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		429123511F4B092E00103BE0 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429123501F4B092E00103BE0 /* EmailUtils.swift */; };
+		429123521F4B093100103BE0 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429123501F4B092E00103BE0 /* EmailUtils.swift */; };
 		42B342211ED2E8F400F944FC /* VSMMailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3420C1ED2E8F400F944FC /* VSMMailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B342221ED2E8F400F944FC /* VSMMailinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3420D1ED2E8F400F944FC /* VSMMailinator.m */; };
 		42B342251ED2E8F400F944FC /* VSMEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342111ED2E8F400F944FC /* VSMEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		429123501F4B092E00103BE0 /* EmailUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailUtils.swift; sourceTree = "<group>"; };
 		42B341CA1ED2E84A00F944FC /* Mailinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B341CE1ED2E84A00F944FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B3420C1ED2E8F400F944FC /* VSMMailinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMMailinator.h; sourceTree = "<group>"; };
@@ -224,6 +227,7 @@
 		42B342901ED2E98500F944FC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				429123501F4B092E00103BE0 /* EmailUtils.swift */,
 				42B342911ED2E98500F944FC /* NSObject+VSMUtils.h */,
 				42B342921ED2E98500F944FC /* NSObject+VSMUtils.m */,
 			);
@@ -327,6 +331,7 @@
 				TargetAttributes = {
 					42B341C91ED2E84A00F944FC = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					42B3429B1ED2EBE300F944FC = {
@@ -383,6 +388,7 @@
 				42B3428A1ED2E8FE00F944FC /* VSMHTTPJSONRequest.m in Sources */,
 				42B342301ED2E8F400F944FC /* VSMMailinatorInboxRequest.m in Sources */,
 				42B3428F1ED2E8FE00F944FC /* VSMHTTPRequestContext.m in Sources */,
+				429123511F4B092E00103BE0 /* EmailUtils.swift in Sources */,
 				42B342261ED2E8F400F944FC /* VSMEmail.m in Sources */,
 				42B342221ED2E8F400F944FC /* VSMMailinator.m in Sources */,
 				42B342941ED2E98500F944FC /* NSObject+VSMUtils.m in Sources */,
@@ -402,6 +408,7 @@
 				42B342A91ED2EBFE00F944FC /* VSMEmail.m in Sources */,
 				42B342AA1ED2EBFE00F944FC /* VSMEmailMetadata.m in Sources */,
 				42B342AB1ED2EBFE00F944FC /* VSMEmailResponse.m in Sources */,
+				429123521F4B093100103BE0 /* EmailUtils.swift in Sources */,
 				42B342AC1ED2EBFE00F944FC /* VSMPart.m in Sources */,
 				42B342AD1ED2EBFE00F944FC /* VSMMailinatorEmailRequest.m in Sources */,
 				42B342AE1ED2EBFE00F944FC /* VSMMailinatorInboxRequest.m in Sources */,
@@ -515,6 +522,7 @@
 		42B341D31ED2E84A00F944FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -525,12 +533,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.virgilsecurity.MailinatorClient;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		42B341D41ED2E84A00F944FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -541,6 +552,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.virgilsecurity.MailinatorClient;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
