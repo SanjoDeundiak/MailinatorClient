@@ -95,7 +95,7 @@
 		42B342911ED2E98500F944FC /* NSObject+VSMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VSMUtils.h"; sourceTree = "<group>"; };
 		42B342921ED2E98500F944FC /* NSObject+VSMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VSMUtils.m"; sourceTree = "<group>"; };
 		42B342951ED2EA4800F944FC /* VSMModelsPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMModelsPublic.h; sourceTree = "<group>"; };
-		42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MailinatorClient.framework; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B3429C1ED2EBE300F944FC /* Mailinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B342C41ED2EDA600F944FC /* Mailinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mailinator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				42B341CA1ED2E84A00F944FC /* Mailinator.framework */,
-				42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */,
+				42B3429C1ED2EBE300F944FC /* Mailinator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 			);
 			name = "MailinatorClient macOS";
 			productName = "MailinatorClient macOS";
-			productReference = 42B3429C1ED2EBE300F944FC /* MailinatorClient.framework */;
+			productReference = 42B3429C1ED2EBE300F944FC /* Mailinator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -573,6 +573,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.virgilsecurity.MailinatorClient;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -593,6 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.virgilsecurity.MailinatorClient;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
