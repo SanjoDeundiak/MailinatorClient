@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		42CDC2661F69633D00D69111 /* Mailinator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 42CDC2671F69633D00D69111 /* Build configuration list for PBXAggregateTarget "Mailinator" */;
+			buildPhases = (
+			);
+			dependencies = (
+				42CDC26B1F69634200D69111 /* PBXTargetDependency */,
+				42CDC26D1F69634200D69111 /* PBXTargetDependency */,
+				42CDC26F1F69634200D69111 /* PBXTargetDependency */,
+			);
+			name = Mailinator;
+			productName = Mailinator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		429123511F4B092E00103BE0 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429123501F4B092E00103BE0 /* EmailUtils.swift */; };
 		429123521F4B093100103BE0 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429123501F4B092E00103BE0 /* EmailUtils.swift */; };
@@ -63,7 +79,59 @@
 		42B342BE1ED2EC2A00F944FC /* VSMMailinatorRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */; };
 		42B342C51ED2EDA600F944FC /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42B342C61ED2EDD500F944FC /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC24A1F69629A00D69111 /* Mailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342C41ED2EDA600F944FC /* Mailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC24B1F6962A300D69111 /* VSMMailinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3420D1ED2E8F400F944FC /* VSMMailinator.m */; };
+		42CDC24C1F6962A500D69111 /* VSMMailinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3420C1ED2E8F400F944FC /* VSMMailinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC24D1F6962AE00D69111 /* VSMModelsPublic.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342951ED2EA4800F944FC /* VSMModelsPublic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC24E1F6962AE00D69111 /* VSMEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342111ED2E8F400F944FC /* VSMEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC24F1F6962AE00D69111 /* VSMEmailMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342131ED2E8F400F944FC /* VSMEmailMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC2501F6962AE00D69111 /* VSMEmailResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342151ED2E8F400F944FC /* VSMEmailResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC2511F6962AE00D69111 /* VSMPart.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342171ED2E8F400F944FC /* VSMPart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42CDC2521F6962B500D69111 /* VSMEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342121ED2E8F400F944FC /* VSMEmail.m */; };
+		42CDC2531F6962B500D69111 /* VSMEmailMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342141ED2E8F400F944FC /* VSMEmailMetadata.m */; };
+		42CDC2541F6962B500D69111 /* VSMEmailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342161ED2E8F400F944FC /* VSMEmailResponse.m */; };
+		42CDC2551F6962B500D69111 /* VSMPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342181ED2E8F400F944FC /* VSMPart.m */; };
+		42CDC2561F6962BB00D69111 /* VSMMailinatorEmailRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421A1ED2E8F400F944FC /* VSMMailinatorEmailRequest.h */; };
+		42CDC2571F6962BB00D69111 /* VSMMailinatorInboxRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421C1ED2E8F400F944FC /* VSMMailinatorInboxRequest.h */; };
+		42CDC2581F6962BB00D69111 /* VSMMailinatorRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3421E1ED2E8F400F944FC /* VSMMailinatorRequest.h */; };
+		42CDC2591F6962BF00D69111 /* VSMMailinatorEmailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3421B1ED2E8F400F944FC /* VSMMailinatorEmailRequest.m */; };
+		42CDC25A1F6962BF00D69111 /* VSMMailinatorInboxRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3421D1ED2E8F400F944FC /* VSMMailinatorInboxRequest.m */; };
+		42CDC25B1F6962BF00D69111 /* VSMMailinatorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3421F1ED2E8F400F944FC /* VSMMailinatorRequest.m */; };
+		42CDC25C1F6962C600D69111 /* VSMHTTPRequestContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342631ED2E8FE00F944FC /* VSMHTTPRequestContext.h */; };
+		42CDC25D1F6962C800D69111 /* VSMHTTPRequestContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342641ED2E8FE00F944FC /* VSMHTTPRequestContext.m */; };
+		42CDC25E1F6962CC00D69111 /* VSMHTTPJSONRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3425E1ED2E8FE00F944FC /* VSMHTTPJSONRequest.h */; };
+		42CDC25F1F6962CC00D69111 /* VSMHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342601ED2E8FE00F944FC /* VSMHTTPRequest.h */; };
+		42CDC2601F6962CC00D69111 /* VSMHTTPRequestPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342621ED2E8FE00F944FC /* VSMHTTPRequestPrivate.h */; };
+		42CDC2611F6962CF00D69111 /* VSMHTTPJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3425F1ED2E8FE00F944FC /* VSMHTTPJSONRequest.m */; };
+		42CDC2621F6962CF00D69111 /* VSMHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342611ED2E8FE00F944FC /* VSMHTTPRequest.m */; };
+		42CDC2631F6962D500D69111 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429123501F4B092E00103BE0 /* EmailUtils.swift */; };
+		42CDC2641F6962D700D69111 /* NSObject+VSMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B342911ED2E98500F944FC /* NSObject+VSMUtils.h */; };
+		42CDC2651F6962DA00D69111 /* NSObject+VSMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B342921ED2E98500F944FC /* NSObject+VSMUtils.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42CDC26A1F69634200D69111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B341C11ED2E84A00F944FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B341C91ED2E84A00F944FC;
+			remoteInfo = "MailinatorClient iOS";
+		};
+		42CDC26C1F69634200D69111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B341C11ED2E84A00F944FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B3429B1ED2EBE300F944FC;
+			remoteInfo = "MailinatorClient macOS";
+		};
+		42CDC26E1F69634200D69111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B341C11ED2E84A00F944FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42CDC2411F69627F00D69111;
+			remoteInfo = "MailinatorClient tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		429123501F4B092E00103BE0 /* EmailUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailUtils.swift; sourceTree = "<group>"; };
@@ -97,6 +165,7 @@
 		42B342951ED2EA4800F944FC /* VSMModelsPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSMModelsPublic.h; sourceTree = "<group>"; };
 		42B3429C1ED2EBE300F944FC /* Mailinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B342C41ED2EDA600F944FC /* Mailinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mailinator.h; sourceTree = "<group>"; };
+		42CDC2421F69627F00D69111 /* Mailinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mailinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +177,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		42B342981ED2EBE300F944FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42CDC23E1F69627F00D69111 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,6 +207,7 @@
 			children = (
 				42B341CA1ED2E84A00F944FC /* Mailinator.framework */,
 				42B3429C1ED2EBE300F944FC /* Mailinator.framework */,
+				42CDC2421F69627F00D69111 /* Mailinator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,6 +358,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42CDC23F1F69627F00D69111 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CDC25C1F6962C600D69111 /* VSMHTTPRequestContext.h in Headers */,
+				42CDC2561F6962BB00D69111 /* VSMMailinatorEmailRequest.h in Headers */,
+				42CDC2581F6962BB00D69111 /* VSMMailinatorRequest.h in Headers */,
+				42CDC25F1F6962CC00D69111 /* VSMHTTPRequest.h in Headers */,
+				42CDC24D1F6962AE00D69111 /* VSMModelsPublic.h in Headers */,
+				42CDC2511F6962AE00D69111 /* VSMPart.h in Headers */,
+				42CDC2571F6962BB00D69111 /* VSMMailinatorInboxRequest.h in Headers */,
+				42CDC2501F6962AE00D69111 /* VSMEmailResponse.h in Headers */,
+				42CDC24A1F69629A00D69111 /* Mailinator.h in Headers */,
+				42CDC24F1F6962AE00D69111 /* VSMEmailMetadata.h in Headers */,
+				42CDC2641F6962D700D69111 /* NSObject+VSMUtils.h in Headers */,
+				42CDC24E1F6962AE00D69111 /* VSMEmail.h in Headers */,
+				42CDC24C1F6962A500D69111 /* VSMMailinator.h in Headers */,
+				42CDC25E1F6962CC00D69111 /* VSMHTTPJSONRequest.h in Headers */,
+				42CDC2601F6962CC00D69111 /* VSMHTTPRequestPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +419,24 @@
 			productReference = 42B3429C1ED2EBE300F944FC /* Mailinator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		42CDC2411F69627F00D69111 /* MailinatorClient tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42CDC2491F69627F00D69111 /* Build configuration list for PBXNativeTarget "MailinatorClient tvOS" */;
+			buildPhases = (
+				42CDC23D1F69627F00D69111 /* Sources */,
+				42CDC23E1F69627F00D69111 /* Frameworks */,
+				42CDC23F1F69627F00D69111 /* Headers */,
+				42CDC2401F69627F00D69111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MailinatorClient tvOS";
+			productName = Mailinator;
+			productReference = 42CDC2421F69627F00D69111 /* Mailinator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,6 +455,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
+					42CDC2411F69627F00D69111 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					42CDC2661F69633D00D69111 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 42B341C41ED2E84A00F944FC /* Build configuration list for PBXProject "Mailinator" */;
@@ -354,6 +479,8 @@
 			targets = (
 				42B341C91ED2E84A00F944FC /* MailinatorClient iOS */,
 				42B3429B1ED2EBE300F944FC /* MailinatorClient macOS */,
+				42CDC2411F69627F00D69111 /* MailinatorClient tvOS */,
+				42CDC2661F69633D00D69111 /* Mailinator */,
 			);
 		};
 /* End PBXProject section */
@@ -367,6 +494,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		42B3429A1ED2EBE300F944FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42CDC2401F69627F00D69111 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,7 +550,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42CDC23D1F69627F00D69111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CDC2631F6962D500D69111 /* EmailUtils.swift in Sources */,
+				42CDC2651F6962DA00D69111 /* NSObject+VSMUtils.m in Sources */,
+				42CDC25B1F6962BF00D69111 /* VSMMailinatorRequest.m in Sources */,
+				42CDC24B1F6962A300D69111 /* VSMMailinator.m in Sources */,
+				42CDC2621F6962CF00D69111 /* VSMHTTPRequest.m in Sources */,
+				42CDC2531F6962B500D69111 /* VSMEmailMetadata.m in Sources */,
+				42CDC25D1F6962C800D69111 /* VSMHTTPRequestContext.m in Sources */,
+				42CDC2551F6962B500D69111 /* VSMPart.m in Sources */,
+				42CDC2591F6962BF00D69111 /* VSMMailinatorEmailRequest.m in Sources */,
+				42CDC2541F6962B500D69111 /* VSMEmailResponse.m in Sources */,
+				42CDC2521F6962B500D69111 /* VSMEmail.m in Sources */,
+				42CDC2611F6962CF00D69111 /* VSMHTTPJSONRequest.m in Sources */,
+				42CDC25A1F6962BF00D69111 /* VSMMailinatorInboxRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42CDC26B1F69634200D69111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B341C91ED2E84A00F944FC /* MailinatorClient iOS */;
+			targetProxy = 42CDC26A1F69634200D69111 /* PBXContainerItemProxy */;
+		};
+		42CDC26D1F69634200D69111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B3429B1ED2EBE300F944FC /* MailinatorClient macOS */;
+			targetProxy = 42CDC26C1F69634200D69111 /* PBXContainerItemProxy */;
+		};
+		42CDC26F1F69634200D69111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42CDC2411F69627F00D69111 /* MailinatorClient tvOS */;
+			targetProxy = 42CDC26E1F69634200D69111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		42B341D01ED2E84A00F944FC /* Debug */ = {
@@ -462,6 +634,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Mailinator;
@@ -509,6 +682,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Mailinator;
 				SDKROOT = iphoneos;
@@ -598,6 +772,62 @@
 			};
 			name = Release;
 		};
+		42CDC2471F69627F00D69111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mailinator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virgilsecurity.MailinatorClient;
+				PRODUCT_NAME = Mailinator;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		42CDC2481F69627F00D69111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mailinator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virgilsecurity.MailinatorClient;
+				PRODUCT_NAME = Mailinator;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		42CDC2681F69633D00D69111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42CDC2691F69633D00D69111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -627,6 +857,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		42CDC2491F69627F00D69111 /* Build configuration list for PBXNativeTarget "MailinatorClient tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CDC2471F69627F00D69111 /* Debug */,
+				42CDC2481F69627F00D69111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42CDC2671F69633D00D69111 /* Build configuration list for PBXAggregateTarget "Mailinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CDC2681F69633D00D69111 /* Debug */,
+				42CDC2691F69633D00D69111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
